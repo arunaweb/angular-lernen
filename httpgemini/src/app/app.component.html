@@ -1,0 +1,15 @@
+<main>
+  <section style="padding: 20px;">
+    <h1>{{title}}</h1>
+
+    <h2>Список пользователей</h2>
+    <ul>
+      <li *ngFor="let user of users">
+        {{ user.first_name }} {{ user.last_name }}
+      </li>
+    </ul>
+
+    <router-outlet />
+  </section>
+</main>
+
