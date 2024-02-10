@@ -1,0 +1,13 @@
+<h2>Die Liste der Leute</h2>
+
+<ul>
+    <li *ngFor="let person of persons" class="one">        
+        <a routerLink="/person-details/{{person.id}}">
+            <span>{{person.id}}</span>
+            <span>{{person.avatar}}</span>
+            <span>{{person.first_name}}</span>
+            <span>{{person.last_name}}</span>
+            <span>{{person.email}}</span>
+        </a>
+    </li>
+</ul>

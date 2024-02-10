@@ -1,0 +1,18 @@
+<div *ngIf="person">
+    <h3>{{person.first_name}} {{person.last_name}}</h3>
+    <div>id: {{person.id}}</div>
+    <div>
+        <label for="person_first_name">Vorname:</label>
+        <input id="person_first_name" [(ngModel)]="person.first_name" placeholder="Vorname">
+    </div>
+    <div>
+        <label for="person_last_name">Nachname:</label>
+        <input id="person_last_name" [(ngModel)]="person.last_name" placeholder="Nachname">
+    </div>
+    <div>
+        <label for="person_email">E-Mail:</label>
+        <input id="person_email" [(ngModel)]="person.email" placeholder="E-Mail">
+    </div>
+</div>
+
+<button type="button" (click)="goBack()">go back</button>
