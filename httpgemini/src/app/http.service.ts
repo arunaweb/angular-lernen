@@ -6,9 +6,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HttpService {
 
+  apiUrl = 'https://reqres.in/api/users?page=2';
+
   constructor(private http: HttpClient) { }
 
   getUsers() {
-    return this.http.get('https://reqres.in/api/users?page=2');
+    return this.http.get(this.apiUrl);
   }
 }
